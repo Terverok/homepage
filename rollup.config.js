@@ -4,6 +4,7 @@ import transformCommonJs from 'rollup-plugin-commonjs'
 import alias from 'rollup-plugin-alias'
 import replace from 'rollup-plugin-replace'
 import babel from 'rollup-plugin-babel'
+import scss from 'rollup-plugin-scss'
 
 export default {
     input: 'src/app.js',
@@ -16,6 +17,9 @@ export default {
         exclude: 'node_modules/**',
     },
     plugins: [
+        scss({
+            output: 'public/styles.css',
+        }),
         vueTransform({
             compileTemplate: true,
         }),
