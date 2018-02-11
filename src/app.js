@@ -1,14 +1,14 @@
 import Vue from 'vue'
+import LandingPage from './landingPage/LandingPage'
 
-const app = new Vue({
+new Vue({
     el: '#app',
-    data: {
-        message: 'hi, I want to be your friend :>',
+
+    components: {
+        LandingPage,
     },
-    created() {
-        console.log(`My hot message:${this.message}`);
-    },
-    render(h) {
-        return <div>{this.message}</div>;
+
+    render() {
+        return <landing-page />;
     }
 })

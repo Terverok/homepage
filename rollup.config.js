@@ -1,3 +1,4 @@
+import vueTransform from 'rollup-plugin-vue'
 import resolve from 'rollup-plugin-node-resolve'
 import transformCommonJs from 'rollup-plugin-commonjs'
 import alias from 'rollup-plugin-alias'
@@ -15,11 +16,14 @@ export default {
         exclude: 'node_modules/**',
     },
     plugins: [
+        vueTransform({
+            compileTemplate: true,
+        }),
         babel({
             exclude: 'node_modules/**',
         }),
         resolve({
-            extensions: ['.js'],
+            extensions: ['.js','.vue'],
             customResolveOptions: {
                 moduleDirectory: 'node_modules',
             }
