@@ -9,6 +9,6 @@ new Vue({
     },
 
     render() {
-        return <landing-page />;
+        return <LandingPage />;
     }
 })

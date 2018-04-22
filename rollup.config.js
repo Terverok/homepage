@@ -1,3 +1,5 @@
+import path from 'path'
+
 import vueTransform from 'rollup-plugin-vue'
 import resolve from 'rollup-plugin-node-resolve'
 import transformCommonJs from 'rollup-plugin-commonjs'
@@ -5,26 +7,35 @@ import alias from 'rollup-plugin-alias'
 import replace from 'rollup-plugin-replace'
 import babel from 'rollup-plugin-babel'
 import scss from 'rollup-plugin-scss'
+import image from 'rollup-plugin-img'
+
+const inputFile = './src/app.js'
+const outputFolder = './public'
 
 export default {
-    input: 'src/app.js',
+    input: inputFile,
     output: {
-        file: 'public/appBundle.js',
+        file: `${outputFolder}/appBundle.js`,
         format: 'iife',
     },
     watch: {
-        clearScreen: false,
+        // clearScreen: false,
         exclude: 'node_modules/**',
     },
     plugins: [
+        image({
+            output: `${outputFolder}`,
+            limit: 0,
+            hash: true,
+        }),
         scss({
-            output: 'public/styles.css',
+            output: `${outputFolder}/styles.css`,
         }),
         vueTransform({
             compileTemplate: true,
         }),
         babel({
-            exclude: 'node_modules/**',
+            include: './src/**',
         }),
         resolve({
             extensions: ['.js','.vue'],
