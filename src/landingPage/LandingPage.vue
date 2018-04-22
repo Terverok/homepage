@@ -1,17 +1,18 @@
 <script>
 import Vue from 'vue'
 import './LandingPage.scss'
+import avatar from '../../static/Tkaczyk-medium.jpg'
 
 export default Vue.extend({
     data: function() {
         return {
-            helloWorldText: 'hello World!',
+            avatar,
         }
     }
 })
 </script>
 
 <template>
-    <div> HI :) {{ helloWorldText }}</div>
+    <div> Welcome on my not yet ready homepage! :) </div>
 </template>
 
