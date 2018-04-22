@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import LandingPage from './landingPage/LandingPage'
+import './mainLayout.scss'
 
 new Vue({
     el: '#app',
@@ -9,6 +10,10 @@ new Vue({
     },
 
     render() {
-        return <LandingPage />;
+        return (
+            <div class="entire-page">
+                <LandingPage />
+            </div>
+        )
     }
 })

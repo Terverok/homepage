@@ -13,6 +13,9 @@ export default Vue.extend({
 </script>
 
 <template>
-    <div> Welcome on my not yet ready homepage! :) </div>
+    <div class="presentation">
+        <img v-bind:src="avatar" />
+        <span class="name">Hi, that's me! :)</span>
+    </div>
 </template>
 
