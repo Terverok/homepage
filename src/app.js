@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import LandingPage from './landingPage'
+import { LandingPage } from './LandingPage'
 import './mainLayout.scss'
 
 new Vue({
