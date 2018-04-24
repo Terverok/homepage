@@ -25,9 +25,11 @@ module.exports = {
     },
     rules: {
         "arrow-parens": ["warn", "as-needed", { "requireForBlockBody": false }],
+        "import/named": "error",
         "import/prefer-default-export": "off",
-        "import/extensions": ["error", "always", { "js": "never", "jsx": "never", "vue": "never" }],
+        "import/extensions": ["error", "never", { "css": "always", "scss": "always", "jpg": "always" }],
         "no-trailing-spaces": "error",
         "vue/html-indent": ["error", 4],
+        "vue/v-bind-style": ["error", "longform"],
     },
 };
