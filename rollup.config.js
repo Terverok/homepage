@@ -2,6 +2,7 @@ import path from 'path'
 
 import vueTransform from 'rollup-plugin-vue'
 import resolve from 'rollup-plugin-node-resolve'
+import localResolve from 'rollup-plugin-local-resolve'
 import transformCommonJs from 'rollup-plugin-commonjs'
 import alias from 'rollup-plugin-alias'
 import replace from 'rollup-plugin-replace'
@@ -43,6 +44,7 @@ export default {
                 moduleDirectory: 'node_modules',
             }
         }),
+        localResolve(),
         transformCommonJs({
             include: 'node_modules/**',
         }),
