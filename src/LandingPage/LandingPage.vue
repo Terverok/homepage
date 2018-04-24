@@ -14,7 +14,7 @@ export default Vue.extend({
 
 <template>
     <div class="presentation">
-        <img v-bind:src="avatar" />
+        <img v-bind:src="avatar">
         <span class="name">Hi, that's me! :)</span>
     </div>
 </template>
