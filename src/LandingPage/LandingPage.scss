@@ -1,12 +1,41 @@
+@import 'styleUtils.scss';
+$avatar-height: 408px;
+
 .presentation {
     position:relative;
     top: 10%;
     align-self: center;
+    width: 50%;
+    height: $avatar-height;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 3fr;
+    grid-column-gap: 15px;
+
+    grid-template-areas:
+        "avatar name"
+        "avatar description";
+}
+
+.avatar {
+    grid-area: avatar;
+    justify-self: center;
 }
 
 .name {
+    grid-area: name;
+
+    margin-top: 10px;
+
     font-size: 40px;
-    margin-left: 20px;
+}
+
+.description {
+    grid-area: description;
+
+    margin-top: 10px;
+
+    overflow: hidden;
+    @include fadeOverflow(90%);
 }

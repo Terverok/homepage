@@ -2,11 +2,13 @@
 import Vue from 'vue'
 import './LandingPage.scss'
 import avatar from '../../static/Tkaczyk-medium.jpg'
+import loremIpsum from 'loremIpsum';
 
 export default Vue.extend({
     data: function() {
         return {
             avatar,
+            loremIpsum,
         }
     }
 })
@@ -14,8 +16,12 @@ export default Vue.extend({
 
 <template>
     <div class="presentation">
-        <img v-bind:src="avatar">
-        <span class="name">Hi, that's me! :)</span>
+        <img
+            v-bind:src="avatar"
+            class="avatar"
+        >
+        <div class="name">Hi, that's me! :)</div>
+        <div class="description">{{ loremIpsum }}</div>
     </div>
 </template>
 
