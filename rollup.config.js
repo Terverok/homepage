@@ -41,7 +41,7 @@ export default {
         resolve({
             extensions: ['.js','.vue'],
             customResolveOptions: {
-                moduleDirectory: 'node_modules',
+                moduleDirectory: ['node_modules', 'src'],
             }
         }),
         localResolve(),
