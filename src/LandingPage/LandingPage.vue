@@ -1,10 +1,16 @@
 <script>
 import Vue from 'vue'
+import loremIpsum from 'loremIpsum'
+
+import { PostsList } from 'PostsList'
+
 import './LandingPage.scss'
 import avatar from '../../static/Tkaczyk-medium.jpg'
-import loremIpsum from 'loremIpsum';
 
 export default Vue.extend({
+    components: {
+        PostsList,
+    },
     data: function() {
         return {
             avatar,
@@ -25,6 +31,7 @@ export default Vue.extend({
             <div class="description">{{ loremIpsum }}</div>
         </div>
         <div class="well" />
+        <PostsList />
     </div>
 </template>
 
