@@ -1,12 +1,21 @@
 @import 'styleUtils.scss';
 $avatar-height: 408px;
 
+@keyframes flow-from-left {
+    0% { position: relative; left: -50px; opacity: 0; }
+    100% { position: relative; left: 0px; opacity: 1; }
+}
+
 .presentation {
-    position:relative;
-    top: 10%;
+    margin-top: 50px;
+
     align-self: center;
     width: 50%;
     height: $avatar-height;
+
+    animation-name: flow-from-left;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 
     display: grid;
     grid-template-columns: auto 1fr;
@@ -21,6 +30,10 @@ $avatar-height: 408px;
 .avatar {
     grid-area: avatar;
     justify-self: center;
+
+    border: solid 1px;
+    border-image: linear-gradient(225deg, #fff, #000) 48%;
+    border-image-width: 40%;
 }
 
 .name {
@@ -37,5 +50,17 @@ $avatar-height: 408px;
     margin-top: 10px;
 
     overflow: hidden;
-    @include fadeOverflow(90%);
+    @include fadeOverflow(90%, #eee);
+}
+
+.well {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100vw;
+    height: 100vh;
+    align-self: center;
+
+    background: radial-gradient(transparent 73%, #ccc);
 }

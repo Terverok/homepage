@@ -15,13 +15,16 @@ export default Vue.extend({
 </script>
 
 <template>
-    <div class="presentation">
-        <img
-            v-bind:src="avatar"
-            class="avatar"
-        >
-        <div class="name">Hi, that's me! :)</div>
-        <div class="description">{{ loremIpsum }}</div>
+    <div class="entire-page">
+        <div class="presentation">
+            <img
+                v-bind:src="avatar"
+                class="avatar"
+            >
+            <div class="name">Hi, that's me! :)</div>
+            <div class="description">{{ loremIpsum }}</div>
+        </div>
+        <div class="well" />
     </div>
 </template>
 

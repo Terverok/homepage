@@ -1,4 +1,4 @@
-@mixin fadeOverflow($overflowStart) {
+@mixin fadeOverflow($overflowStart, $backgroundColor) {
     position: relative;
 
     &::before {
@@ -10,6 +10,6 @@
         top: 0;
         left: 0;
 
-        background: linear-gradient(transparent $overflowStart, white);
+        background: linear-gradient(transparent $overflowStart, $backgroundColor);
     } 
 }
