@@ -12,6 +12,10 @@ module.exports = {
                     ".jsx",
                     ".vue",
                 ],
+                "moduleDirectory": [
+                    "node_modules",
+                    "src",
+                ],
             },
         },
     },
