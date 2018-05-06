@@ -38,8 +38,8 @@ export default Vue.extend({
 
 <template>
     <div class="navigation-bar">
-        <Navigation label="About me" to="#about-me"/>
-        <Navigation label="Posts" />
+        <Navigation label="About me" to="#about-me" />
+        <Navigation label="Posts" to="#posts" />
         <Navigation label="footer" />
     </div>
 </template>

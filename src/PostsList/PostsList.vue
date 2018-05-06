@@ -30,7 +30,7 @@ export default Vue.extend({
 </script>
 
 <template>
-    <div class="posts-list">
+    <div id="posts" class="posts-list">
         <PostSummary
             v-for="post in posts"
             v-bind:key="post.id"
