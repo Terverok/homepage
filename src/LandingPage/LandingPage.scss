@@ -6,6 +6,11 @@ $avatar-height: 408px;
     100% { position: relative; left: 0px; opacity: 1; }
 }
 
+.landing-page {
+    display: flex;
+    flex-direction: column;
+}
+
 .presentation {
     margin-top: 50px;
 

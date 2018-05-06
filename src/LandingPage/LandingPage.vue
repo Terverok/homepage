@@ -15,8 +15,8 @@ export default Vue.extend({
 </script>
 
 <template>
-    <div class="entire-page">
-        <div class="presentation">
+    <div class="landing-page">
+        <div id="about-me" class="presentation">
             <img
                 v-bind:src="avatar"
                 class="avatar"

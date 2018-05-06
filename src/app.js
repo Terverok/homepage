@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { LandingPage } from './LandingPage'
+import NavigationBar from './NavigationBar'
 import './mainLayout.scss'
 
 new Vue({
@@ -7,11 +8,13 @@ new Vue({
 
     components: {
         LandingPage,
+        NavigationBar,
     },
 
     render() {
         return (
             <div class="entire-page">
+                <NavigationBar />
                 <LandingPage />
             </div>
         )

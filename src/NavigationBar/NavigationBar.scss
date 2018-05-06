@@ -1,0 +1,12 @@
+.navigation-bar {
+    position: fixed;
+    top: 10%;
+    left: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-link {
+    color: blue;
+}
