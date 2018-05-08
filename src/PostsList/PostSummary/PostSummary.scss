@@ -1,4 +1,8 @@
 .post-summary {
+    margin: 5px;
+    border: 1px dashed #777;
+    padding: 2px 5px;
+
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
