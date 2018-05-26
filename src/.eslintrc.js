@@ -33,6 +33,7 @@ module.exports = {
         "import/prefer-default-export": "off",
         "import/extensions": ["error", "never", { "css": "always", "scss": "always", "jpg": "always" }],
         "no-trailing-spaces": "error",
+        "no-invalid-this": "error",
         "vue/html-indent": ["error", 4],
         "vue/v-bind-style": ["error", "longform"],
     },
