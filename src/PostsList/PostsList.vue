@@ -8,16 +8,19 @@ const mockPosts = [
     {
         id: 0,
         title: 'test',
+        date: 'xx-yy-zzzz',
         data: `helo! it's test post :)`,
     },
     {
         id: 1,
         title: 'Narcissistic',
+        date: '01-01-01',
         data: `Here! I want to be the first :<`,
     },
     {
         id: 2,
         title: 'Long test',
+        date: '01-03-2018',
         data: loremIpsum,
     }
 ]

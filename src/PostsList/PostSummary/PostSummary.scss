@@ -1,10 +1,9 @@
 .post-summary {
     margin: 5px;
-    border: 1px dashed #777;
     padding: 2px 5px;
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr;
 
     grid-template-areas:
@@ -13,10 +12,22 @@
 
     &-title {
         grid-area: title;
+
+        margin: 0.3em 5px;
+        font-size: 30px;
+        text-align: center;
     }
 
     &-description {
         grid-area: description;
         justify-self: center;
+
+        text-indent: 2em;
+        text-align: justify;
+    }
+    &-date {
+        border-top: 1px dashed;
+        width: 100%;
+        grid-area: title;
     }
 }

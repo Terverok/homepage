@@ -18,5 +18,6 @@ export default Vue.extend({
     <div class="post-summary">
         <div class="post-summary-title">{{ post.title }}</div>
         <div class="post-summary-description">{{ post.data }}</div>
+        <div class="post-summary-date">{{ post.date }}</div>
     </div>
 </template>
