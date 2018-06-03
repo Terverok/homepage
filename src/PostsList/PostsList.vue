@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import './PostsList.scss'
 import { PostSummary } from './PostSummary'
+import loremIpsum from '../loremIpsum'
 
 const mockPosts = [
     {
@@ -13,6 +14,11 @@ const mockPosts = [
         id: 1,
         title: 'Narcissistic',
         data: `Here! I want to be the first :<`,
+    },
+    {
+        id: 2,
+        title: 'Long test',
+        data: loremIpsum,
     }
 ]
 
@@ -30,7 +36,10 @@ export default Vue.extend({
 </script>
 
 <template>
-    <div id="posts" class="posts-list">
+    <div
+        id="posts"
+        class="posts-list"
+    >
         <PostSummary
             v-for="post in posts"
             v-bind:key="post.id"
