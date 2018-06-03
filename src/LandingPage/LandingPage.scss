@@ -35,12 +35,23 @@ $avatar-height: 408px;
 
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto 3fr;
+    grid-template-rows: auto 1fr;
     grid-column-gap: 15px;
 
     grid-template-areas:
         "avatar name"
         "avatar description";
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+            "name"
+            "avatar"
+            "description";
+
+        height: 100%;
+    }
 }
 
 .avatar {
@@ -64,6 +75,12 @@ $avatar-height: 408px;
 
     margin-top: 10px;
 
+    text-align: justify;
+
     overflow: hidden;
     @include fadeOverflow(90%, transparent);
+
+    @media screen and (max-width: 800px) {
+        text-align: center;
+    }
 }
