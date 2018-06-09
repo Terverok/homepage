@@ -1,3 +1,4 @@
+@import '../pallete.scss';
 @import 'styleUtils.scss';
 @import 'variables.scss';
 $avatar-height: 408px;
@@ -20,7 +21,7 @@ $avatar-height: 408px;
 
     display: flex;
     flex-direction: column;
-    background-color: cornflowerblue; 
+    background-color: lighten($primary, 50%);
 }
 
 .presentation {
@@ -70,6 +71,7 @@ $avatar-height: 408px;
     margin-top: 10px;
 
     font-size: 40px;
+    color: $primary;
 }
 
 .description {
@@ -78,6 +80,7 @@ $avatar-height: 408px;
     margin-top: 10px;
 
     text-align: justify;
+    color: $dark-grey;
 
     overflow: hidden;
     @include fadeOverflow(90%, transparent);

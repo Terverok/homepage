@@ -1,4 +1,4 @@
-$rest-navigation-color: hsla(250, 67%, 40%, 1);
+@import '../pallete.scss';
 
 .navigation-bar {
     position: fixed;
@@ -6,7 +6,7 @@ $rest-navigation-color: hsla(250, 67%, 40%, 1);
     left: 50px;
     z-index: 1;
 
-    border-right: solid $rest-navigation-color 0.05em;
+    border-right: solid $secondary 0.05em;
 
     display: flex;
     flex-direction: column;
@@ -21,13 +21,13 @@ $rest-navigation-color: hsla(250, 67%, 40%, 1);
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    color: $rest-navigation-color;
+    color: $secondary;
 
     transition: left 0.5s;
 
     &:hover {
         left: 5px;
 
-        color: hsla(250, 67%, 12%, 1);
+        color: darken($secondary, 20%);
     }
 }
