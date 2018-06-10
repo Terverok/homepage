@@ -1,4 +1,5 @@
-@import '../../pallete.scss';
+@import 'variables.scss';
+@import 'pallete.scss';
 
 .post-summary {
     margin: 5px;
@@ -19,6 +20,7 @@
         font-size: 30px;
         text-align: center;
         color: $primary;
+        font-size: $headersFontSize;
     }
 
     &-description {
@@ -27,7 +29,6 @@
 
         text-indent: 2em;
         text-align: justify;
-        color: $dark-grey;
     }
     &-date {
         border-top: 1px dashed;

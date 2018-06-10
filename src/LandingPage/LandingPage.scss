@@ -16,7 +16,6 @@ $avatar-height: 408px;
 }
 
 .upper-row {
-    margin-top: 50px;
     width: 100%;
 
     display: flex;
@@ -62,7 +61,7 @@ $avatar-height: 408px;
 
     grid-area: avatar;
     justify-self: center;
-    filter: drop-shadow(-8px 5px 8px #3a3a3a);
+    filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .name {
@@ -70,7 +69,7 @@ $avatar-height: 408px;
 
     margin-top: 10px;
 
-    font-size: 40px;
+    font-size: $headersFontSize;
     color: $primary;
 }
 
@@ -80,7 +79,6 @@ $avatar-height: 408px;
     margin-top: 10px;
 
     text-align: justify;
-    color: $dark-grey;
 
     overflow: hidden;
     @include fadeOverflow(90%, transparent);
