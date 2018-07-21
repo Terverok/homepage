@@ -1,6 +1,6 @@
 <script>
 import Vue from 'vue'
-import loremIpsum from 'loremIpsum'
+import shortAboutMe from 'aboutme'
 
 import { PostsList } from 'PostsList'
 import { TransparentPicture } from 'SpecialUtils'
@@ -18,7 +18,7 @@ export default Vue.extend({
         return {
             avatar,
             mask,
-            loremIpsum,
+            shortAboutMe,
         }
     }
 })
@@ -38,8 +38,8 @@ export default Vue.extend({
                     v-bind:picture="avatar"
                     class="avatar"
                 />
-                <div class="name">Hi, that's me! :)</div>
-                <div class="description">{{ loremIpsum }}</div>
+                <div class="name">Hi! I'm Marek</div>
+                <div class="description">{{ shortAboutMe }}</div>
             </div>
         </div>
         <PostsList />
