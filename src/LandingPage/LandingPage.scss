@@ -28,7 +28,8 @@ $avatar-height: 408px;
     width: $siteContentWidth;
     height: $avatar-height;
 
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 
     animation-name: flow-from-left;
     animation-duration: 1s;
@@ -59,6 +60,8 @@ $avatar-height: 408px;
     width: 100%;
     // max-height: 450px;
 
+    padding-bottom: 15px;
+
     grid-area: avatar;
     justify-self: center;
     filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.5));
@@ -67,6 +70,7 @@ $avatar-height: 408px;
 .name {
     grid-area: name;
 
+    padding-top: 50px;
     margin-top: 10px;
 
     font-size: $headersFontSize;
